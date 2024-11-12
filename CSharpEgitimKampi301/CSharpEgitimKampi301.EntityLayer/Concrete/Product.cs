@@ -23,7 +23,7 @@ namespace CSharpEgitimKampi301.EntityLayer.Concrete
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
-        //
+        // her bir product birden fazla order da olabilir.
         public List<Order> Orders { get; set; }
     }
 }
