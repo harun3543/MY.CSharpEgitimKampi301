@@ -1,0 +1,7 @@
+﻿Context
+
+Context; database ile bağlantı tanımlamasını oluşturacağımız kısımdır.
+database'e yansıyacak olan tabloları tuttuğumuz yer.
+
+------------------------------------------------------
+Bir tabloyu database'e yansıtmak istiyorsak "CampContext" in içine yazmamız gerekiyor.
