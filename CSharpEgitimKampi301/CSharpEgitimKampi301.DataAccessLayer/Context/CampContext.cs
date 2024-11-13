@@ -20,3 +20,7 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Context
         public DbSet<Admin> Admins { get; set; }
     }
 }
+
+
+
+

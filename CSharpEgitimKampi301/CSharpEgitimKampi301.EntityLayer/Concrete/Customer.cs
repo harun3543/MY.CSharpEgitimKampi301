@@ -16,6 +16,8 @@ namespace CSharpEgitimKampi301.EntityLayer.Concrete
 
         // bir customer birden fazla order verrebilir.
         public List<Order> Orders { get; set; }
+        public bool CustomerStatus { get; set; }
+
 
     }
 }
