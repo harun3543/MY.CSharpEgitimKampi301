@@ -61,8 +61,6 @@ namespace CSharpEgitimKampi301.EfProject
             // Ayşegül Çınar'ın toplam tur sayısı
             var guideIdByNameAysegulCinar = db.Guides.Where(x=> x.Name == "Ayşegül" &&  x.Surname =="Çınar").Select(y=> y.GuideId).FirstOrDefault();
             lblAysegulCinarLocationCount.Text = db.Locations.Where(x=>x.GuideId == guideIdByNameAysegulCinar).Count().ToString();
-        }
-
-    
+        }  
     }
 }
