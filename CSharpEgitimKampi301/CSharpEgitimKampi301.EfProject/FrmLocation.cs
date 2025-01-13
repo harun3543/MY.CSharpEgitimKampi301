@@ -26,6 +26,7 @@ namespace CSharpEgitimKampi301.EfProject
             // Aşağıdaki select Linq sorgusu ile Fullname isminde yeni bir variable oluşturup
             // guide tablosundaki "Name" "Surname" değikenlerini birleştirmiş olduk
             // Ardından combobax aracına bu "Fullname" değişkenini verdik.
+            // tamamen combobox'ın "DisplayMember" ı doldurmak için yapılmıştır
             var values = db.Guides.Select(x=> new
             {
                 Fullname = x.Name + " " + x.Surname,
