@@ -58,12 +58,18 @@
     <Compile Include="Abstract\IOrderDal.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Context\CampContext.cs" />
+    <Compile Include="EntityFremawork\EfAdminDal.cs" />
+    <Compile Include="EntityFremawork\EfCateforyDal.cs" />
+    <Compile Include="EntityFremawork\EfCustomerDal.cs" />
+    <Compile Include="EntityFremawork\EfOrderDal.cs" />
+    <Compile Include="EntityFremawork\EfProductDal.cs" />
     <Compile Include="Migrations\202411130806488_mig1.cs" />
     <Compile Include="Migrations\202411130806488_mig1.Designer.cs">
       <DependentUpon>202411130806488_mig1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GenericRepositories.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="readme.txt" />
@@ -83,10 +89,7 @@
       <DependentUpon>202411130806488_mig1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EntityFramework\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

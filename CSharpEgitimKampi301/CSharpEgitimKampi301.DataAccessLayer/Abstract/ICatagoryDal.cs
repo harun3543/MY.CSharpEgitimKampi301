@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.DataAccessLayer.Abstract
 {
-    public class ICatagoryDal : IGenericDal<Category>
+    public interface ICatagoryDal : IGenericDal<Category>
     {
     }
 }
