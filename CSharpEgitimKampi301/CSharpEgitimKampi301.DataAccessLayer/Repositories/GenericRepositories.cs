@@ -51,6 +51,7 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Repositories
         {
             var insertedEntity = context.Entry(entity); // ekleme yapacağımız entity'i hafızaya aldık
             insertedEntity.State = EntityState.Added;
+            context.SaveChanges();
         }
 
         // Update
@@ -61,6 +62,7 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Repositories
 
             var updatedEntity = context.Entry(entity);
             updatedEntity.State = EntityState.Modified;
+            context.SaveChanges();
         }
     }
 }
