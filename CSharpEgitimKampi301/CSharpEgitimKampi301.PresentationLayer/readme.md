@@ -4,3 +4,5 @@ Bu katman direk olarak database layer katmanına bağlanıp context objesini kul
 onun yerine business layer ile haberleşip oluşturduğumuz "Service" ve "Manager" 
 kavramlarını kullanacaktır. buraya dikkat edilmeli
 
+#### Color Sitesi
+https://flatuicolors.com/
