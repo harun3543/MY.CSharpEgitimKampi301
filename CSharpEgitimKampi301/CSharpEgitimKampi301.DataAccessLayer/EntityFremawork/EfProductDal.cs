@@ -9,8 +9,11 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.DataAccessLayer.EntityFremawork
 {
-    public class EfProductDal:GenericRepositories<Product>,IProductDal
+    public class EfProductDal : GenericRepositories<Product>, IProductDal
     {
-
+        public List<Product> GetProductsWithCategory()
+        {
+           
+        }
     }
 }
