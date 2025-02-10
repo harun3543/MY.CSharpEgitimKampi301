@@ -46,6 +46,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnList2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,7 +121,7 @@
             this.btnList.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnList.Location = new System.Drawing.Point(121, 279);
             this.btnList.Name = "btnList";
-            this.btnList.Size = new System.Drawing.Size(176, 39);
+            this.btnList.Size = new System.Drawing.Size(85, 39);
             this.btnList.TabIndex = 29;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = true;
@@ -213,12 +214,24 @@
             this.textBox3.Size = new System.Drawing.Size(176, 114);
             this.textBox3.TabIndex = 47;
             // 
+            // btnList2
+            // 
+            this.btnList2.Font = new System.Drawing.Font("Georgia", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnList2.Location = new System.Drawing.Point(212, 279);
+            this.btnList2.Name = "btnList2";
+            this.btnList2.Size = new System.Drawing.Size(85, 39);
+            this.btnList2.TabIndex = 48;
+            this.btnList2.Text = "Listele2";
+            this.btnList2.UseVisualStyleBackColor = true;
+            this.btnList2.Click += new System.EventHandler(this.btnList2_Click);
+            // 
             // FrmProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(207)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1237, 560);
+            this.Controls.Add(this.btnList2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBox1);
@@ -264,5 +277,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btnList2;
     }
 }

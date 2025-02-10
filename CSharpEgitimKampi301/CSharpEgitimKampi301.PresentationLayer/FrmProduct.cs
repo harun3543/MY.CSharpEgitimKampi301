@@ -27,5 +27,11 @@ namespace CSharpEgitimKampi301.PresentationLayer
             var values = _productService.TGetAll();
             dataGridView1.DataSource = values;
         }
+
+        private void btnList2_Click(object sender, EventArgs e)
+        {
+            var values = _productService.TGetProductsWithCategory();
+            dataGridView1.DataSource = values;
+        }
     }
 }

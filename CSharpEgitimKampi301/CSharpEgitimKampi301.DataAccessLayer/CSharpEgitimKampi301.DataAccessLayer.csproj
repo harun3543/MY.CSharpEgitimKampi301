@@ -63,6 +63,14 @@
     <Compile Include="EntityFremawork\EfCustomerDal.cs" />
     <Compile Include="EntityFremawork\EfOrderDal.cs" />
     <Compile Include="EntityFremawork\EfProductDal.cs" />
+    <Compile Include="Migrations\202502040719518_AddProductDto.cs" />
+    <Compile Include="Migrations\202502040719518_AddProductDto.Designer.cs">
+      <DependentUpon>202502040719518_AddProductDto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502040731527_RemoveProductDto.cs" />
+    <Compile Include="Migrations\202502040731527_RemoveProductDto.Designer.cs">
+      <DependentUpon>202502040731527_RemoveProductDto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\GenericRepositories.cs" />
@@ -80,7 +88,14 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202502040719518_AddProductDto.resx">
+      <DependentUpon>202502040719518_AddProductDto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502040731527_RemoveProductDto.resx">
+      <DependentUpon>202502040731527_RemoveProductDto.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
